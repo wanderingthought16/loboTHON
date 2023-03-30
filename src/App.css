@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round&display=swap);
+
+.App {
+  text-align: center;
+  max-height: 100vh;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-image: url(../public/DashboardBackground.gif);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cardRow {
+  padding-top: 1%;
+  color: black;
+}
+
+.donationTable {
+  width: 100%;
+  text-align: left;
+  font-size: large;
+}
+
+th {
+  font-size: xx-large;
+  background-color: rgba(211,211,211,.3);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+td {
+  background-color: rgba(211,211,211,.3);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 150%;
+}
+
+table {
+  padding-left:5%;
+  padding-right:5%;
+  width: 100%;
+  border-collapse: separate !important;
+  border-spacing: 5px;
+}
+
+.message {
+  font-size: 50%
+}
+
+.noMarginAlert {
+  margin-bottom: 0% !important;
+  opacity: 85%;
+}
+
+.filledRow {
+  width: 100%
+}
+
+span {
+  font-weight: bold;
+  padding: 0;
+}
+
+.countdown {
+  background-color: rgba(211,211,211,.3);
+  border-radius: 10px;
+  font-size: 60px;
+}
+
+.donationAlert {
+  /* dear lord this is scuffed i'm so sorry */
+  position: absolute;
+  width: 53%;
+  height: 95%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 5;
+  background-image: url(../public/goldenstar.png);
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 3s;
+}
+
+.donationAlertHidden {
+  opacity: 0;
+}
+
+.donationAlert h1 {
+  position: relative;
+  left: 52%;
+  top: 52%;
+  color:black;
+  font-size: 180%;
+  text-align: center;
+  width: 35%;
+  transform: translate(-50%, -50%);
+}
