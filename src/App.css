@@ -18,8 +18,9 @@
 }
 
 .App-header {
-  background-image: url(../public/DashboardBackground.gif);
-  background-size: cover;
+  /* background-image: url(../public/DashboardBackground.gif); */
+  /* background-size: cover; */
+  background-color: #E385B0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
